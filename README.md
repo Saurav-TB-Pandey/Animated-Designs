@@ -2,9 +2,9 @@
 
 🎨 A collection of eye-catching, interactive UI elements crafted with HTML, CSS, and JavaScript.
 
-![GitHub license](https://img.shields.io/github/license/Saurav-TB-Pandey/animated-designs)
-![GitHub stars](https://img.shields.io/github/stars/Saurav-TB-Pandey/animated-designs)
-![GitHub forks](https://img.shields.io/github/forks/Saurav-TB-Pandey/animated-designs)
+![GitHub license](https://img.shields.io/github/license/Saurav-TB-Pandey/Animated-Designs)
+![GitHub stars](https://img.shields.io/github/stars/Saurav-TB-Pandey/Animated-Designs)
+![GitHub forks](https://img.shields.io/github/forks/Saurav-TB-Pandey/Animated-Designs)
 
 ## 🚀 Features
 
@@ -24,13 +24,13 @@
 
 ## 🌐 Live Demo
 
-Check out the live demo [here](https://Saurav-TB-Pandey.github.io/animated-designs)
+Check out the live demo [here](https://Saurav-TB-Pandey.github.io/Animated-Designs)
 
 ## 🛠️ Usage
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Saurav-TB-Pandey/animated-designs.git
+   git clone https://github.com/Saurav-TB-Pandey/Animated-Designs.git
    ```
 2. Open `index.html` in your browser to view the showcase.
 3. Copy the HTML, CSS, and JavaScript for the component you want to use.
@@ -38,7 +38,7 @@ Check out the live demo [here](https://Saurav-TB-Pandey.github.io/animated-desig
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Saurav-TB-Pandey/animated-designs/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Saurav-TB-Pandey/Animated-Designs/issues).
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -54,7 +54,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - Saurav Pandey - pandeysaurav878@gmail.com
 
-Project Link: [https://github.com/Saurav-TB-Pandey/animated-designs](https://github.com/Saurav-TB-Pandey/animated-designs)
+Project Link: [https://github.com/Saurav-TB-Pandey/Animated-Designs](https://github.com/Saurav-TB-Pandey/Animated-Designs)
 
 ---
 
