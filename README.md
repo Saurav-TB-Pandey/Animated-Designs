@@ -5,6 +5,7 @@
 ![GitHub license](https://img.shields.io/github/license/Saurav-TB-Pandey/Animated-Designs)
 ![GitHub stars](https://img.shields.io/github/stars/Saurav-TB-Pandey/Animated-Designs)
 ![GitHub forks](https://img.shields.io/github/forks/Saurav-TB-Pandey/Animated-Designs)
+![Visitors](https://hits.sh/github.com/Saurav-TB-Pandey/Animated-Designs.svg)
 
 ## 🚀 Features
 
