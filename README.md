@@ -2,9 +2,9 @@
 
 🎨 A collection of eye-catching, interactive UI elements crafted with HTML, CSS, and JavaScript.
 
-![GitHub license](https://img.shields.io/github/license/yourusername/animated-designs)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/animated-designs)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/animated-designs)
+![GitHub license](https://img.shields.io/github/license/Saurav-TB-Pandey/animated-designs)
+![GitHub stars](https://img.shields.io/github/stars/Saurav-TB-Pandey/animated-designs)
+![GitHub forks](https://img.shields.io/github/forks/Saurav-TB-Pandey/animated-designs)
 
 ## 🚀 Features
 
@@ -24,7 +24,7 @@
 
 ## 🌐 Live Demo
 
-Check out the live demo [here](https://yourusername.github.io/animated-designs)
+Check out the live demo [here](https://Saurav-TB-Pandey.github.io/animated-designs)
 
 ## 🛠️ Usage
 
@@ -38,7 +38,7 @@ Check out the live demo [here](https://yourusername.github.io/animated-designs)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/animated-designs/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Saurav-TB-Pandey/animated-designs/issues).
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
