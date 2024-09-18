@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Awesome Weather Card</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+            .weather-widget {
+                --day-primary: #ffb300;
+                --day-secondary: #ff8f00;
+                --night-primary: #3f51b5;
+                --night-secondary: #303f9f;
+                --text-light: #ffffff;
+                --text-dark: #212121;
+                font-family: sans-serif;
+            }
+
+            .widget-container {
+                width: 20rem;
+                height: 100%;
+                background: linear-gradient(
+                    135deg,
+                    var(--day-primary),
+                    var(--day-secondary)
+                );
+                border-radius: 30px;
+                overflow: hidden;
+                transition: background 0.5s ease;
+            }
+
+            .phone-frame {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                color: var(--text-light);
+            }
+
+            .status-bar {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                font-size: 14px;
+            }
+
+            .icons {
+                display: flex;
+                gap: 10px;
+            }
+
+            .wifi::before {
+                content: "◠◠◠";
+                transform: rotate(90deg);
+                display: inline-block;
+            }
+
+            .battery {
+                width: 20px;
+                height: 10px;
+                border: 2px solid currentColor;
+                border-radius: 2px;
+                position: relative;
+            }
+
+            .battery::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                right: 2px;
+                bottom: 2px;
+                background-color: currentColor;
+                border-radius: 1px;
+            }
+
+            .content {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .weather-circle {
+                width: 200px;
+                height: 200px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: background 0.5s ease;
+            }
+
+            .weather-icon::before {
+                content: "☀️";
+                font-size: 100px;
+            }
+
+            .temperature {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .toggle-label {
+                width: 200px;
+                height: 40px;
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 20px;
+                margin-bottom: 10px;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .toggle-switch {
+                width: 100px;
+                height: 40px;
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 20px;
+                position: absolute;
+                left: 0;
+                transition: left 0.3s ease;
+            }
+
+            .toggle-text {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+                box-sizing: border-box;
+                line-height: 10px;
+                font-weight: bold;
+            }
+
+            .forecast {
+                color: var(--text-dark);
+            }
+
+            .weather-toggle:checked + .widget-container {
+                background: linear-gradient(
+                    135deg,
+                    var(--night-primary),
+                    var(--night-secondary)
+                );
+            }
+
+            .weather-toggle:checked + .widget-container .weather-circle {
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+            .weather-toggle:checked + .widget-container .weather-icon::before {
+                content: "🌙";
+            }
+
+            .weather-toggle:checked + .widget-container .toggle-switch {
+                left: 100px;
+            }
+
+            .weather-toggle:checked + .widget-container .current {
+                color: var(--text-dark);
+            }
+
+            .weather-toggle:checked + .widget-container .forecast {
+                color: var(--text-dark);
+            }
+
+            .weather-toggle {
+                display: none;
+            }
+
+            .current,
+            .forecast {
+                color: var(--text-dark);
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .widget-container,
+                .weather-circle,
+                .toggle-switch {
+                    transition: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="weather-widget">
+            <input id="weather-toggle" type="checkbox" class="weather-toggle" />
+            <div class="widget-container">
+                <div class="phone-frame">
+                    <div class="status-bar">
+                        <div class="time">12:30</div>
+                        <div class="icons">
+                            <div class="wifi"></div>
+                            <div class="battery"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="weather-circle">
+                            <div class="weather-icon"></div>
+                        </div>
+                        <div class="temperature">22°C</div>
+                        <label for="weather-toggle" class="toggle-label">
+                            <div class="toggle-switch"></div>
+                            <div class="toggle-text">
+                                <p class="current">Current</p>
+                                <p class="forecast">Forecast</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
